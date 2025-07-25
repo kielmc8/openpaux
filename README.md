@@ -31,3 +31,79 @@ This project offers:
 
 ## 🧱 Architecture Overview
 
+[Excel] [Google Sheets] [Electron Desktop]
+\ | /
+------------ [TM1 REST API] ------------
+(via secure auth)
+
+Optionally, all clients can also connect through a backend proxy for added security and data shaping.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+```bash
+git clone https://github.com/yourusername/openpaux.git
+cd openpaux
+
+| Client               | Folder                 | Docs                                           |
+| -------------------- | ---------------------- | ---------------------------------------------- |
+| Excel Add-in         | `excel-addin/`         | [Excel README](excel-addin/README.md)          |
+| Google Sheets Add-on | `google-sheets-addon/` | [Sheets README](google-sheets-addon/README.md) |
+| Electron Desktop App | `electron-client/`     | [Electron README](electron-client/README.md)   |
+
+🔧 Configuration
+
+Create a .env or config.json with your TM1 credentials and server info:
+{
+  "serverUrl": "https://your-tm1-server/api/v1",
+  "authType": "Basic",
+  "username": "admin",
+  "password": "apple"
+}
+
+(More secure methods like OAuth or IBM CAM are supported in the backend proxy)
+
+🛣️ Roadmap
+
+ Read-only cube browsing
+
+ Cross-platform Excel + Sheets support
+
+ Writeback support
+
+ Sandbox + workflow support
+
+ Secure middleware proxy
+
+ Dashboard/visualization tools
+
+
+🤝 Contributing
+We welcome contributions from the TM1 community! To get started:
+
+Fork this repo
+
+Create a feature branch
+
+Submit a pull request with clear description
+
+See CONTRIBUTING.md for coding guidelines.
+
+
+.
+
+📝 License
+This project is licensed under the Apache 2.0 License — see the LICENSE file for details.
+
+📫 Contact & Community
+Questions? Ideas? Bugs?
+
+Submit a GitHub Issue
+
+Join the conversation on Reddit or [LinkedIn]
+
+Contact the maintainer: [kielmc8@gmail.com]
+
+
